@@ -1,36 +1,104 @@
 <!DOCTYPE html>
-<html lang="en-gb">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready text-sm lg:text-base"
+  style="--bg: #faf6f1"
+  lang="en-gb"
+>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>My First Post | dpz.sh</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Introduction This is bold text, and this is emphasized text.
-Visit the Hugo website!">
-    <meta name="generator" content="Hugo 0.92.2" />
-    
-    
-    
-    
-      <meta name="robots" content="noindex, nofollow">
-    
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
 
-    
-<link rel="stylesheet" href="/ananke/css/main.min.css" >
+  
+  <title>My First Post - dpz.sh</title>
 
+  
+  <meta name="theme-color" />
+  
+  <meta name="description" content="Introduction This is bold text, and this is emphasized text.
+Visit the Hugo website!" />
+  <meta
+    name="author"
+    content=""
+  />
+  
 
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://dpz.sh/main.min.css" />
 
-    
-    
-    
-      
+  
+  <script
+    defer
+    src="https://dpz.sh/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
 
-    
+  
+   
+  <link rel="preload" as="image" href="https://dpz.sh/theme.png" />
 
-    
-    
-    <meta property="og:title" content="My First Post" />
+  
+  
+  
+  
+
+  
+
+  
+  <link rel="icon" href="https://dpz.sh/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://dpz.sh/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.92.2" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="My First Post" />
 <meta property="og:description" content="Introduction This is bold text, and this is emphasized text.
 Visit the Hugo website!" />
 <meta property="og:type" content="article" />
@@ -38,120 +106,165 @@ Visit the Hugo website!" />
 <meta property="article:published_time" content="2023-02-21T20:58:34+00:00" />
 <meta property="article:modified_time" content="2023-02-21T20:58:34+00:00" />
 
-<meta itemprop="name" content="My First Post">
+
+  
+  <meta itemprop="name" content="My First Post">
 <meta itemprop="description" content="Introduction This is bold text, and this is emphasized text.
 Visit the Hugo website!"><meta itemprop="datePublished" content="2023-02-21T20:58:34+00:00" />
 <meta itemprop="dateModified" content="2023-02-21T20:58:34+00:00" />
 <meta itemprop="wordCount" content="14">
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="" />
+  
+  <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="My First Post"/>
 <meta name="twitter:description" content="Introduction This is bold text, and this is emphasized text.
 Visit the Hugo website!"/>
 
-	
-  </head>
+  
+  
+</head>
 
-  <body class="ma0 avenir bg-near-white">
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold"
+      href="https://dpz.sh"
+      >dpz.sh</a
+    >
+    <a
+      class="btn-dark ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+    ></a>
+  </div>
+
+  <a
+    class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+  ></a>
+
+  
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
 
     
-   
-  
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
 
-  <header>
-    <div class="bg-black">
-      <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l justify-between items-center center">
-    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
-      
-        dpz.sh
-      
-    </a>
-    <div class="flex-l items-center">
-      
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = `"#faf6f1"`.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
 
-      
-      
-<div class="ananke-socials">
-  
-</div>
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
 
-    </div>
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+
+    
   </div>
-</nav>
+</header>
 
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-20 pb-32 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-20">
+    <h1 class="!my-0 pb-2.5">My First Post</h1>
+
+    
+    <div class="text-sm opacity-60">
+      
+      <time>Feb 21, 2023</time>
+      
+      
     </div>
+    
   </header>
 
-
-
-    <main class="pb7" role="main">
-      
-  
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
-    <header class="mt4 w-100">
-      <aside class="instapaper_ignoref b helvetica tracked">
-          
-        POSTS
-      </aside>
-      
-
-
-
-
-
-
-
-
-
-
-  <div id="sharing" class="mt3 ananke-socials">
-    
-  </div>
-
-
-      <h1 class="f1 athelas mt3 mb1">My First Post</h1>
-      
-      
-      
-      <time class="f6 mv4 dib tracked" datetime="2023-02-21T20:58:34Z">February 21, 2023</time>
-      
-
-      
-      
-    </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h2 id="introduction">Introduction</h2>
+  <section><h2 id="introduction">Introduction</h2>
 <p>This is <strong>bold</strong> text, and this is <em>emphasized</em> text.</p>
 <p>Visit the <a href="https://gohugo.io">Hugo</a> website!</p>
-<ul class="pa0">
+</section>
+
   
-</ul>
-<div class="mt6 instapaper_ignoref">
-      
-      
-      </div>
-    </div>
+  
 
-    <aside class="w-30-l mt6-l">
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    <a
+      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 no-underline hover:bg-black/[2%]"
+      href="https://dpz.sh/posts/workflow/"
+      ><span class="mr-1.5">←</span><span>Workflow</span></a
+    >
+    
+    
+  </nav>
+  
 
+  
+  
 
+  
+  
+</article>
 
-
-</aside>
-
-  </article>
 
     </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://dpz.sh/" >
-    &copy;  dpz.sh 2023 
-  </a>
-    <div>
-<div class="ananke-socials">
-  
-</div>
-</div>
+
+    <footer
+  class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2023
+    <a class="link" href="https://dpz.sh">dpz.sh</a>
   </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >▷ Paper 6</a
+  >
 </footer>
 
   </body>

@@ -2,4 +2,4 @@ baseURL = 'https://dpz.sh'
 publishDir = "docs"
 languageCode = 'en-gb'
 title = 'dpz.sh'
-theme = 'ananke'
+theme = 'hugo-paper'

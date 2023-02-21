@@ -6,7 +6,27 @@
     <description>Recent content in Posts on dpz.sh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 21 Feb 2023 20:58:34 +0000</lastBuildDate><atom:link href="https://dpz.sh/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Feb 2023 21:36:29 +0000</lastBuildDate><atom:link href="https://dpz.sh/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Workflow</title>
+      <link>https://dpz.sh/posts/workflow/</link>
+      <pubDate>Tue, 21 Feb 2023 21:36:29 +0000</pubDate>
+      
+      <guid>https://dpz.sh/posts/workflow/</guid>
+      <description>workflow_things Mostly made to send a link when people ask about things I&amp;rsquo;ve found to improve my workflow
+tools fzf
+nvim
+nc
+oh my zsh
+jq
+bspwm
+sxhkd
+sshuttle
+rust
+alacritty unibar
+zshrc # alias when you know the filter for speed alias lq=&#39;function _lq() { logcli query -t -q --include-label=line &#39;{NOMAD_JOB_NAME=&#39;\&amp;quot;${1}\&amp;quot;&#39;}&#39; };_lq&#39;` # alias for when you want interactive search - requires fzf alias lql=&#39;function _lql() { logcli query -t -q --include-label=line &#39;{NOMAD_JOB_NAME=&#39;\&amp;quot;$(logcli labels NOMAD_JOB_NAME | fzf --s ync)\&amp;quot;&#39;}&#39; };_lql&#39; #bind key to open on ctrl+l lqll() { logcli query -t -q --include-label=line &#39;{NOMAD_JOB_NAME=&#39;\&amp;quot;$(logcli labels NOMAD_JOB_NAME | fzf --sync)\&amp;quot;&#39;}&#39; } zle -N lqll bindkey ^l lqll alias watch=&#39;watch &#39; if command -v tmux &amp;amp;&amp;gt; /dev/null &amp;amp;&amp;amp; [ -n &amp;quot;$PS1&amp;quot; ] &amp;amp;&amp;amp; [[ !</description>
+    </item>
+    
     <item>
       <title>My First Post</title>
       <link>https://dpz.sh/posts/my-first-post/</link>
