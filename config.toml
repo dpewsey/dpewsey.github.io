@@ -1,0 +1,5 @@
+baseURL = 'https://dpewsey.github.io/'
+publishDir = "docs"
+languageCode = 'en-us'
+title = 'Hugo Test'
+theme = 'ananke'
