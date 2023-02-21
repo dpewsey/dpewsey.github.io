@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Hugo Test</title>
-    <link>https://dpewsey.github.io/tags/</link>
-    <description>Recent content in Tags on Hugo Test</description>
+    <title>Tags on dpz.sh</title>
+    <link>https://dpz.sh/tags/</link>
+    <description>Recent content in Tags on dpz.sh</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://dpewsey.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-gb</language><atom:link href="https://dpz.sh/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
